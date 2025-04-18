@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        function function1(){
+        
+            a=+(prompt("enter no 1"));
+            document.getElementById('p1').innerHTML = a;
+        }
+        function function2(){
+        
+            b=+(prompt("enter no 2"));
+            document.getElementById('p2').innerHTML = b;
+        }
+        function function3(){
+            document.getElementById('b1').innerHTML = a+b;
+        }
+    </script>
+</head>
+<body>
+    <table border="2">
+        <tr>
+            <td>
+                <button value="no1" onclick="function1()">Enter first number</button>
+            </td>
+            <td><p id="p1"></p></td>
+        </tr>
+        <tr>
+            
+            <td>
+                <button value="no2" onclick="function2()">Enter second number</button>
+            </td>
+            <td><p id="p2"></p></td>
+        </tr>
+        <tr>
+            <td>
+                <button value="no3" onclick="function3()" id="b1">ok</button>
+            
+            </td>
+        </tr>
+    </table>
+    
+
+</body>
+</html>
