@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myfunction(){
+            let n1,n2,n3,n4,n5;
+            n1=+(document.getElementById('n1').value);
+            n2=+(document.getElementById('n2').value);
+            n3=+(document.getElementById('n3').value);
+            n4=+(document.getElementById('n4').value);
+            n5=+(document.getElementById('n5').value);
+
+            document.getElementById('p1').innerHTML=n1+n2+n3+n4+n5;
+            document.getElementById('p2').innerHTML=(n1+n2+n3+n4+n5)/5;
+        }
+    </script>
+</head>
+<body>
+    <table border="2">
+        <tr>
+            <td>enter marks1 </td>
+            <td><input type="number" name="" id="n1"></td>
+        </tr>
+        <tr>
+            <td>enter marks2</td>
+            <td><input type="number" name="" id="n2"></td>
+        </tr>
+        <tr>
+            <td>enter marks3</td>
+            <td><input type="number" name="" id="n3"></td>
+        </tr>
+        <tr>
+            <td>enter marks4</td>
+            <td><input type="number" name="" id="n4"></td>
+        </tr>
+        <tr>
+            <td>enter marks5</td>
+            <td><input type="number" name="" id="n5"></td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><button value="Ok" onclick="myfunction()" align="center">OK</button></td>
+        </tr>
+
+        <tr>
+            <td>total marks </td>
+            <td><p id="p1"></p></td>
+        </tr>
+
+        <tr>
+            <td>total percentage </td>
+          <td>  <p id="p2"></p></td>
+        </tr>
+
+
+
+    </table>
+</body>
+</html>
