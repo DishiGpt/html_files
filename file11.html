@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myfunction(){
+            let n1,n2,n3;
+            n1=parseInt(document.getElementById('n1').value)  /* parseInt will type cast and  */
+            n2=+(document.getElementById('n2').value)
+            n3=n1-n2;
+            document.getElementById('p1').innerHTML=n3;
+        }
+    </script>
+</head>
+<body>
+    <table border="2">
+        <tr>
+            <td>enter number1</td>
+            <td><input type="number" id="n1"></td>
+        </tr>
+
+        <tr>
+            <td>enter number2</td>
+            <td><input type="number" id="n2"></td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><button value="OK" onclick="myfunction()">OK</button></td>
+        </tr>
+
+        <tr>
+            <td>sum is </td>
+            <td><p id="p1"></p></td>
+        </tr>
+
+
+        
+    </table>
+</body>
+</html>
