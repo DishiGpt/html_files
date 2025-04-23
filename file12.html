@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myfunction(){
+            let sname ,sclass;
+            sname=document.getElementById('t1').value
+            sclass=document.getElementById('t2').value
+
+            document.getElementById('p1').innerHTML=sname;/for p innerhtml will use/
+            document.getElementById('p2').innerHTML=sclass;
+        }
+    </script>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td>
+                enter your name 
+            </td>
+            <td><input type="text" id="t1"></td>
+        </tr>
+
+        <tr>
+            <td>
+                enter your class
+            </td>
+            <td><input type="text"  id="t2"></td>
+        </tr>
+
+        <tr>
+           <td colspan="2" align="center"><button value="OK" onclick="myfunction()">OK</button></td>
+        </tr>
+
+        <tr>
+            <td>your name is </td>
+            <td><p id="p1"></p></td>
+        </tr>
+
+        <tr>
+            <td>your class is </td>
+            <td><p id="p2"></p></td>
+        </tr>
+        
+
+    </table>
+</body>
+</html>
