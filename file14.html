@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function func()
+        {
+            document.getElementById('p1').style.color='black'
+            document.getElementById('p1').style.fontWeight='normal'
+            document.getElementById('p1').style.fontStyle='normal'
+            document.getElementById('p1').style.textDecoration='none'
+
+        }
+    </script>
+</head>
+<body>
+    <p id="p1">Techno India NJR</p>
+    <input type="button" value="red"
+    onclick="document.getElementById('p1').style.color='red'">
+    <input type="button" value="green"
+    onclick="document.getElementById('p1').style.color='green'">
+    <input type="button" value="blue"
+    onclick="document.getElementById('p1').style.color='blue'">
+
+
+    <input type="button" value="italic"
+    onclick="document.getElementById('p1').style.fontStyle='italic'">
+    <input type="button" value="bold"
+    onclick="document.getElementById('p1').style.fontWeight='bold'">
+    <input type="button" value="underline"
+    onclick="document.getElementById('p1').style.textDecoration='underline'">
+
+    <input type="button" value="reset"
+    onclick="func()">
+
+    
+    
+
+</body>
+</html>
